@@ -2,6 +2,9 @@ import { GitCompare, Heart, Share2 } from "lucide-react";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function Home() {
     return (
@@ -18,274 +21,301 @@ function Home() {
                 </div>
             </div>
 
-<section>
-<div className="browse-range">
-                <h2 className="title">Browse The Range</h2>
-                <p className="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div className="category-grid row">
-                    {/* Dining Category */}
-                    <div className="category-item  col-md-6 col-lg-auto">
-                        <img src="/img/image 100.png" alt="Dining" className="category-image" />
-                        <p className="category-name">Dining</p>
-                    </div>
-
-                    {/* Living Category */}
-                    <div className="category-item col-md-6 col-lg-auto">
-                        <img src="/img/image 101.png" alt="Living" className="category-image" />
-                        <p className="category-name">Living</p>
-                    </div>
-
-                    {/* Bedroom Category */}
-                    <div className="category-item  col-md-6 col-lg-auto">
-                        <img src="/img/image 106.png" alt="Bedroom" className="category-image" />
-                        <p className="category-name">Bedroom</p>
-                    </div>
-                </div>
-            </div>
-</section>
-           
-
             <section>
-                <div className="container products-section">
-                    <h2 className="section-title">Our Products</h2>
-                    <div className="row">
-                        {/* Product 1 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
-                                    <span className="discount-badge"><p>-30%</p></span>
-                                   
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
+                <div className="browse-range">
+                    <h2 className="title">Browse The Range</h2>
+                    <p className="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className="category-grid row">
+
+                        <div className="category-item  col-md-6 col-lg-auto">
+                            <img src="/img/image 100.png" alt="Dining" className="category-image" />
+                            <p className="category-name">Dining</p>
                         </div>
 
-                        {/* Product 2 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/Images 5.png" alt="Sytherine" />
-                                    
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
+
+                        <div className="category-item col-md-6 col-lg-auto">
+                            <img src="/img/image 101.png" alt="Living" className="category-image" />
+                            <p className="category-name">Living</p>
                         </div>
 
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/Images (1).png" alt="Sytherine" />
-                                    <span className="new-badge"><p>New</p></span>
-                                   
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
 
-                        {/* Product 4 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/Images (2).png" alt="Sytherine" />
-                                    <span className="discount-badge"><p>-30%</p></span>
-                                    <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Product 5 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/image 100.png" alt="Sytherine" />
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-
-                        {/* Product 6 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/Images.png" alt="Sytherine" />
-                                    <span className="new-badge"><p>New</p></span>
-                                    
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-
-                        {/* Product 7 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/Images (3).png" alt="Sytherine" />
-                                    <span className="discount-badge"><p>-30%</p></span>
-                                    
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-
-                        {/* Product 8 */}
-                        <div className="col-lg-3 col-md-6 mb-4">
-                            <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/Images (5).png" alt="Sytherine" />
-                                    <span className="newt-badge"><p>New</p></span>
-                                    
-                                </div>
-                                <div className="product-info">
-                                    <h3>Sytherine</h3>
-                                    <p>Stylish cafe chair</p>
-                                    <p className="price">Rp 2.500.000 <span className="old-price">Rp 3.500.000</span></p>
-                                </div>
-                                <div className="overlay">
-                                        <button className="cart-btn">Add to cart</button>
-                                        <div className="overlay-links">
-                                            <span><Share2 size={16} /> Share</span>
-                                            <span><Heart size={16} /> Like</span>
-                                            <span><GitCompare size={16} /> Compare</span>
-                                        </div>
-                                    </div>
-                            </div>
+                        <div className="category-item  col-md-6 col-lg-auto">
+                            <img src="/img/image 106.png" alt="Bedroom" className="category-image" />
+                            <p className="category-name">Bedroom</p>
                         </div>
                     </div>
-
-                    {/* Show More Button */}
-                    <button className="show-more-btn">Show More</button>
                 </div>
             </section>
 
 
-            <div className="section-new">
-                <div className="row dataroom">
-                    {/* Left Section */}
-                    <div className="col-lg-3">
-                        <div className="title">
-                            <h3>50+ Beautiful rooms inspiration</h3>
-                            <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
-                            <button className="explore-btn">Explore More</button>
-                        </div>
-                    </div>
+            <section>
+                <div className="products-section">
+                    <h2 className="section-title">Our Products</h2>
+                    <div className="row product-list">
 
-                    {/* Center Image */}
-                    <div className="col-lg-3">
-                        <div className="image-container">
-                            <img src="/img/Rectangle 24.png" alt="Inner Peace" className="image" />
-                            <div className="text-overlay">
-                                <p className="bed-room">01 — Bed Room</p>
-                                <p>Inner Peace</p>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <span className="discount-badge">
+                                        <p>-30%</p>
+
+                                    </span>
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Sytherine</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 2.500.000 <span className="old-price">Rp 3.500.000</span>
+                                    </p>
+                                </div>
                             </div>
-                            <button className="arrow-btn">➜</button>
                         </div>
-                    </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
 
-                    {/* Swiper Slider */}
-                    <div className="col-lg-4">
-                        <Swiper
-                            navigation={true}
-                            pagination={{ clickable: true }}
-                            mousewheel={true}
-                            keyboard={true}
-                            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide>
-                                <img src="/img/Rectangle 25.png" alt="Room 1" className="imageroom" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src="/img/Rectangle 25.png" alt="Room 2" className="imageroom" />
-                            </SwiperSlide>
-                        </Swiper>
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Leviosa</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 2.500.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <span className="discount-badge"><p>-30%</p></span>
+
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Lolito</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 2.500.000 <span className="old-price">Rp 3.500.000</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <span className="new-badge"><p>New</p></span>
+
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Respira</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 2.500.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Grifo</h3>
+                                    <p>SNight lamp</p>
+                                    <p className="price">
+                                        Rp 2.500.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <span className="new-badge"><p>New</p></span>
+
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Muggo</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 2.500.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <span className="discount-badge"><p>-30%</p></span>
+
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Pingky</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 7.000.000<span className="old-price">Rp 3.500.000</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div className="product-card">
+                                <div className="product-image">
+                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <span className="new-badge"><p>New</p></span>
+
+                                    <div className="overlay">
+                                        <button className="cart-btn">Add to cart</button>
+                                        <div className="overlay-links">
+                                            <span><Share2 /> Share</span>
+                                            <span><Heart /> Like</span>
+                                            <span><GitCompare /> Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product-info">
+                                    <h3>Potty</h3>
+                                    <p>Stylish cafe chair</p>
+                                    <p className="price">
+                                        Rp 2.500.000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+                    <button className="show-more-btn">Show More</button>
                 </div>
+            </section>
+<section>
+      <div className="section-new">
+        <div className="container">
+          <div className="row dataroom align-items-center">
+          
+            <div className="col-lg-4">
+              <div className="title-data">
+                <h3>50+ Beautiful rooms inspiration</h3>
+                <p>
+                  Our designer already made a lot of beautiful prototypes of
+                  rooms that inspire you.
+                </p>
+                <button className="explore-btn">Explore More</button>
+              </div>
             </div>
+
+         
+            <div className="col-lg-4">
+              <div className="image-container">
+                <img
+                  src="/img/image 101.png"
+                  alt="Inner Peace"
+                  className="image"
+                />
+                <div className="text-overlay">
+                  <p className="bed-room">01 — Bed Room</p>
+                  <h5>Inner Peace</h5>
+                </div>
+                {/* <button className="arrow-btn">➜</button> */}
+              </div>
+            </div>
+
+           
+            <div className="col-lg-4">
+              <Swiper
+                cssMode={true}
+                navigation={true}
+                pagination={{ clickable: true }}
+                mousewheel={true}
+                keyboard={true}
+                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img src="/img/image 101.png" alt="Inner Peace" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/image 106.png" alt="Room 2" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/img/image 100.png" alt="Room 3" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
         </div>
     )
 }

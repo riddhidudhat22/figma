@@ -30,6 +30,12 @@
         font-weight: 700;
         font-size: 30px;
     }
+    /* .product-list .col-12{
+        width: 62%;
+    } */
+    .products-section {
+        padding: 0;
+   }
 }
 
 /* sm */
@@ -49,6 +55,12 @@
         padding-bottom: 15px;
         padding-left: 46px;
     }
+    .products-section {
+         padding: 40px;
+    }
+    /* .product-list .col-12{
+        width: 100%;
+    } */
 }
 
 /* md */

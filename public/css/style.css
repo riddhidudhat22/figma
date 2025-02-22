@@ -43,7 +43,6 @@ html {
   font-size: 62.5%;
 }
 
-/* Header container */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -53,7 +52,6 @@ html {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -66,10 +64,10 @@ html {
   font-size: 24px;
   margin-right: 5px;
   color: #d4a762;
-  /* Gold color for logo */
+
 }
 
-/* Navigation links */
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -85,10 +83,10 @@ html {
 
 .nav-links li:hover {
   color: #d4a762;
-  /* Gold color on hover */
+
 }
 
-/* Icons */
+
 .nav-icons {
   display: flex;
   gap: 25px;
@@ -191,7 +189,7 @@ html {
 }
 
 /* 2 */
-/* Styling for the entire section */
+
 .browse-range {
   text-align: center;
   margin-top: 31px;
@@ -199,7 +197,7 @@ html {
   background-color: #fff;
 }
 
-/* Title and subtitle */
+
 .title {
   font-family: Poppins;
   font-weight: 700;
@@ -220,7 +218,6 @@ html {
 
 }
 
-/* Grid layout */
 .category-grid {
   display: flex;
   justify-content: center;
@@ -228,10 +225,6 @@ html {
   margin-top: 20px;
 }
 
-/* Category item styling */
-/* .category-item {
-  text-align: center;
-} */
 .category-item p {
   font-family: Poppins;
   font-weight: 600;
@@ -242,21 +235,18 @@ html {
   color: #000;
 }
 
-/* Category images */
+
 .category-image {
   width: 250px;
   height: 300px;
-  /* object-fit: cover; */
   border-radius: 10px;
-  /* transition: transform 0.3s ease-in-out; */
+
 }
 
-/* Hover effect */
 .category-image:hover {
   transform: scale(1.05);
 }
 
-/* Category name */
 .category-name {
   font-weight: bold;
   margin-top: 10px;
@@ -274,6 +264,7 @@ html {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 24px;
 }
 
 .product-card {
@@ -295,7 +286,7 @@ html {
 .product-image img {
   width: 100%;
   height: 305px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .discount-badge {
@@ -304,38 +295,82 @@ html {
   right: 10px;
   background: red;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
+  height: 39px;
+  width: 39px;
+  border-radius: 37px;
+  font-size: 12px
 }
+
+.discount-badge p {
+  position: relative;
+  top: 9px;
+}
+
+.new-badge p {
+  position: relative;
+  top: 9px;
+}
+
 .new-badge {
   position: absolute;
   top: 10px;
   right: 10px;
-  background:#2EC1AC;
+  background: #2EC1AC;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
+  height: 39px;
+  width: 39px;
+  border-radius: 37px;
+  font-size: 12px
 }
+
 .product-info {
   padding: 15px;
 }
 
+.information {
+  margin: 0 0 20px 0;
+}
+
 .product-info h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 0%;
+
+}
+
+.product-info p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+
+}
+
+.products-section .row {
+  justify-content: center;
+  row-gap: 32px;
 }
 
 .price {
-  font-weight: bold;
-  margin-top: 5px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #000;
 }
 
 .old-price {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
   text-decoration: line-through;
-  color: gray;
-  margin-left: 10px;
+  color: #B0B0B0;
 }
 
 .overlay {
@@ -357,13 +392,16 @@ html {
   opacity: 1;
 }
 
+
 .cart-btn {
-  background: yellow;
+  color: #B88E2F;
   border: none;
   padding: 10px 20px;
   margin-bottom: 10px;
   cursor: pointer;
   font-weight: bold;
+  background-color: #fff;
+
 }
 
 .overlay-links span {
@@ -373,63 +411,42 @@ html {
 }
 
 .show-more-btn {
-  background: gold;
+  background: #fff;
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
   font-weight: bold;
+  color: #B88E2F;
+  border: 1px solid #B88E2F;
+
 }
 
 
 /* 4 */
-
-/* Section Layout */
-.section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f9f6f1;
-  padding: 40px;
+.section-new {
+  padding: 50px 0;
+  background: #f9f9f9;
 }
 
-/* Left Section */
-.left {
-  width: 45%;
-}
-
-.left h2 {
-  font-size: 28px;
+.title-data h3 {
+  font-size: 24px;
   font-weight: bold;
-  color: #333;
 }
 
-.left p {
-  color: #666;
-  margin: 10px 0;
+.title-data p {
+  color: #555;
 }
 
 .explore-btn {
-  background-color: #c29548;
+  background: #d4a762;
   color: white;
-  padding: 10px 16px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-/* Right Section (Images) */
-.right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-/* Image Containers */
 .image-container {
-  width: 50%;
-  padding: 10px;
   position: relative;
 }
 
@@ -438,45 +455,33 @@ html {
   border-radius: 10px;
 }
 
-/* Text Overlay on First Image */
 .text-overlay {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  background-color: white;
+  bottom: 20px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.7);
   padding: 10px;
   border-radius: 5px;
 }
 
-.text-overlay p {
-  font-size: 12px;
-  color: #888;
-}
-
-.text-overlay h3 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Next Arrow */
 .arrow-btn {
   position: absolute;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
-  padding: 8px 12px;
-  border-radius: 50%;
+  bottom: 20px;
+  right: 10px;
+  background: gold;
+  padding: 10px;
   border: none;
   cursor: pointer;
-  font-size: 18px;
 }
 
-
+.mySwiper img {
+  width: 85%;
+  border-radius: 10px;
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+  display: none;
+}
 /* 5 */
-
-/* Footer container */
 .footer {
   background-color: white;
   padding: 40px 0;
@@ -484,7 +489,6 @@ html {
   font-family: Arial, sans-serif;
 }
 
-/* Main footer layout */
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -494,7 +498,7 @@ html {
   padding: 0 20px;
 }
 
-/* Left Section */
+
 .footer-left {
   flex: 1;
 }
@@ -509,7 +513,6 @@ html {
   margin-top: 10px;
 }
 
-/* Middle Section */
 .footer-links {
   display: flex;
   gap: 50px;
@@ -535,7 +538,6 @@ html {
   color: black;
 }
 
-/* Right Section */
 .footer-newsletter {
   flex: 1;
 }
@@ -568,7 +570,6 @@ html {
   cursor: pointer;
 }
 
-/* Bottom Section */
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
