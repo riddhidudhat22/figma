@@ -53,7 +53,7 @@ function Home() {
                     <h2 className="section-title">Our Products</h2>
                     <div className="row product-list">
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -80,7 +80,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -104,7 +104,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -129,7 +129,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -154,7 +154,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -178,7 +178,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -203,7 +203,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -223,12 +223,12 @@ function Home() {
                                     <h3>Pingky</h3>
                                     <p>Stylish cafe chair</p>
                                     <p className="price">
-                                        Rp 7.000.000<span className="old-price">Rp 3.500.000</span>
+                                        Rp 7.000.000 <span className="old-price">Rp 3.500.000</span>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
                                     <img src="/img/image 1.png" alt="Sytherine" />
@@ -258,64 +258,61 @@ function Home() {
                     <button className="show-more-btn">Show More</button>
                 </div>
             </section>
-<section>
-      <div className="section-new">
-        <div className="container">
-          <div className="row dataroom align-items-center">
-          
-            <div className="col-lg-4">
-              <div className="title-data">
-                <h3>50+ Beautiful rooms inspiration</h3>
-                <p>
-                  Our designer already made a lot of beautiful prototypes of
-                  rooms that inspire you.
-                </p>
-                <button className="explore-btn">Explore More</button>
-              </div>
-            </div>
+            <section>
+                <div className="section-new">
+                    <div className="container">
+                        <div className="row dataroom align-items-center">
 
-         
-            <div className="col-lg-4">
-              <div className="image-container">
-                <img
-                  src="/img/image 101.png"
-                  alt="Inner Peace"
-                  className="image"
-                />
-                <div className="text-overlay">
-                  <p className="bed-room">01 — Bed Room</p>
-                  <h5>Inner Peace</h5>
+                            <div className="col-lg-4 col-md-6">
+                                <div className="title-data">
+                                    <h3>50+ Beautiful rooms inspiration</h3>
+                                    <p>
+                                        Our designer already made a lot of beautiful prototypes of
+                                        rooms that inspire you.
+                                    </p>
+                                    <button className="explore-btn">Explore More</button>
+                                </div>
+                            </div>
+
+
+                            <div className="innerimg col-lg-4 col-md-6">
+                                <div className="image-container">
+                                    <img src="/img/image 101.png" alt="Inner Peace" className="image" />
+                                    <div className="text-overlay">
+                                        <p className="bed-room">01 — Bed Room</p>
+                                        <h5>Inner Peace</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div className="sliderimg  col-lg-4 col-md-6">
+                    
+                                    <Swiper
+                                        navigation={true} // Navigation को Enable करें
+                                        pagination={{ clickable: true }}
+                                        mousewheel={true}
+                                        keyboard={true}
+                                        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                                        className="mySwiper"
+                                    >
+                                        <SwiperSlide>
+                                            <img src="/img/image 101.png" alt="Inner Peace" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <img src="/img/image 106.png" alt="Room 2" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <img src="/img/image 100.png" alt="Room 3" />
+                                        </SwiperSlide>
+                                    </Swiper>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {/* <button className="arrow-btn">➜</button> */}
-              </div>
-            </div>
-
-           
-            <div className="col-lg-4">
-              <Swiper
-                cssMode={true}
-                navigation={true}
-                pagination={{ clickable: true }}
-                mousewheel={true}
-                keyboard={true}
-                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <img src="/img/image 101.png" alt="Inner Peace" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="/img/image 106.png" alt="Room 2" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="/img/image 100.png" alt="Room 3" />
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </section>
         </div>
     )
 }
