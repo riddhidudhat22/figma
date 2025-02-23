@@ -223,7 +223,7 @@ function Home() {
                                     <h3>Pingky</h3>
                                     <p>Stylish cafe chair</p>
                                     <p className="price">
-                                        Rp 7.000.000 <span className="old-price">Rp 3.500.000</span>
+                                        Rp 7.000.000  <span className="old-price">Rp 3.500.000</span>
                                     </p>
                                 </div>
                             </div>

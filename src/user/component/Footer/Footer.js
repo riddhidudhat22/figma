@@ -51,6 +51,7 @@ function Footer() {
             <p>2023 funiro. All rights reserved</p>
           </div>
         
+        
       </footer>
     </>
   )
