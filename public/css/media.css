@@ -771,6 +771,9 @@
     .cart-container {
         flex-direction: row;
       }
+      .add-to-cart span, .compare span{
+        font-size: 14px;
+      }
 }
 
 
