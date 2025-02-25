@@ -5,12 +5,13 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Button from "../../component/Button/Button";
 
 function Home() {
     return (
         <div>
             <div className="hero-container">
-                <img src="/img/scandinavian-interior-mockup-wall-decal-background 1.png" alt="Scandinavian Interior" className="hero-image" />
+                <img src="/img/scandinavian-interior-mockup-wall-decal-background 1.png" alt="" className="hero-image" />
                 <div className="hero-content">
                     <h5>New Arrival</h5>
                     <h1>Discover Our New Collection</h1>
@@ -28,19 +29,19 @@ function Home() {
                     <div className="category-grid row">
 
                         <div className="category-item  col-md-6 col-lg-auto">
-                            <img src="/img/image 100.png" alt="Dining" className="category-image" />
+                            <img src="/img/image 100.png" alt="" className="category-image" />
                             <p className="category-name">Dining</p>
                         </div>
 
 
                         <div className="category-item col-md-6 col-lg-auto">
-                            <img src="/img/image 101.png" alt="Living" className="category-image" />
+                            <img src="/img/image 101.png" alt="" className="category-image" />
                             <p className="category-name">Living</p>
                         </div>
 
 
                         <div className="category-item  col-md-6 col-lg-auto">
-                            <img src="/img/image 106.png" alt="Bedroom" className="category-image" />
+                            <img src="/img/image 106.png" alt="" className="category-image" />
                             <p className="category-name">Bedroom</p>
                         </div>
                     </div>
@@ -56,7 +57,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge">
                                         <p>-30%</p>
 
@@ -83,7 +84,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
 
 
                                     <div className="overlay">
@@ -107,7 +108,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge"><p>-30%</p></span>
 
 
@@ -132,7 +133,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
 
@@ -157,7 +158,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
 
 
                                     <div className="overlay">
@@ -181,7 +182,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
 
@@ -206,7 +207,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge"><p>-30%</p></span>
 
 
@@ -231,7 +232,7 @@ function Home() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
                                     <div className="overlay">
@@ -255,9 +256,10 @@ function Home() {
 
 
                     </div>
-                    <button className="show-more-btn">Show More</button>
+                    <Button/>
                 </div>
             </section>
+
             <section>
                 <div className="section-new">
                     <div className="container">
@@ -277,7 +279,7 @@ function Home() {
 
                             <div className="innerimg col-lg-4 col-md-6">
                                 <div className="image-container">
-                                    <img src="/img/image 101.png" alt="Inner Peace" className="image" />
+                                    <img src="/img/image 101.png" alt="" className="image" />
                                     <div className="text-overlay">
                                         <p className="bed-room">01 — Bed Room</p>
                                         <h5>Inner Peace</h5>
@@ -290,7 +292,7 @@ function Home() {
                             <div className="sliderimg  col-lg-4 col-md-6">
                     
                                     <Swiper
-                                        navigation={true} // Navigation को Enable करें
+                                        navigation={true} 
                                         pagination={{ clickable: true }}
                                         mousewheel={true}
                                         keyboard={true}
@@ -298,13 +300,13 @@ function Home() {
                                         className="mySwiper"
                                     >
                                         <SwiperSlide>
-                                            <img src="/img/image 101.png" alt="Inner Peace" />
+                                            <img src="/img/image 101.png" alt="" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src="/img/image 106.png" alt="Room 2" />
+                                            <img src="/img/image 106.png" alt="" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src="/img/image 100.png" alt="Room 3" />
+                                            <img src="/img/image 100.png" alt="" />
                                         </SwiperSlide>
                                     </Swiper>
                                 
@@ -313,6 +315,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            
         </div>
     )
 }

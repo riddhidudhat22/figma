@@ -8,7 +8,7 @@ function Header() {
         <div className="container-fluid nav-bar bg-transparent">
             <nav className="navbar navbar-expand-lg bg-white navbar-light py-3 px-5">
                 <NavLink to="/" className="navbar-brand d-flex align-items-center">
-                    <img className="logo-icon me-2" src="img/Meubel House_Logos-05.png" alt="Logo" style={{ height: "30px" }} />
+                    <img className="logo-icon me-2" src="/img/Meubel House_Logos-05.png" alt="" style={{ height: "30px" }} />
                     <span className="fw-bold fs-4 text-dark">Furniro</span>
                 </NavLink>
                 <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -53,3 +53,5 @@ function Header() {
 }
 
 export default Header;
+
+

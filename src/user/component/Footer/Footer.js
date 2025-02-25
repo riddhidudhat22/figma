@@ -7,7 +7,6 @@ function Footer() {
       <footer className="footer">
       
           <div className="footer-container row">
-            {/* Left Section */}
             <div className="footer-left col-lg-3 col-md-4 col-sm-6">
               <h2 className="footer-title">Funiro.</h2>
               <p className="footer-address">
@@ -16,8 +15,6 @@ function Footer() {
               </p>
             </div>
 
-            {/* Middle Section - Links */}
-            
               <div className="footer-column col-lg-3 col-md-4 col-sm-6">
                 <h3>Links</h3>
                 <ul>
@@ -37,7 +34,6 @@ function Footer() {
                   <li>Privacy Policies</li>
                 </ul>
               </div>
-            {/* Right Section - Newsletter */}
             <div className="footer-newsletter col-lg-3 col-md-4 col-sm-6">
               <h3>Newsletter</h3>
               <div className="footer-subscribe">
@@ -46,7 +42,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Bottom Section */}
           <div className="footer-bottom">
             <p>2023 funiro. All rights reserved</p>
           </div>

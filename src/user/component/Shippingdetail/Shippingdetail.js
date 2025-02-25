@@ -1,8 +1,4 @@
-
-import { GitCompare, Heart, Share2 } from "lucide-react";
 import React from "react";
-import { FaFilter, FaHeadset, FaShieldAlt, FaShippingFast, FaThLarge, FaTrophy } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 
 function Shippingdetail() {
     return (

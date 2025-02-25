@@ -1,26 +1,28 @@
 import { GitCompare, Heart, Share2 } from "lucide-react";
 import React from "react";
-import { FaFilter, FaHeadset, FaShieldAlt, FaShippingFast, FaThLarge, FaTrophy } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Shippingdetail from "../../component/Shippingdetail/Shippingdetail";
+import Backimg from "../../component/Backimg/Backimg";
 
 function Shop() {
     return (
         <>
-            <div className="shop-banner">
-                <div className="overlay-shop"></div>
-                <div className="banner-content">
-                    <h1>Shop</h1>
-                    <nav>
-                        <NavLink to="/" className="breadcrumb-link">Home</NavLink>
-                        <span> &gt; </span>
-                        <span className="current-page">Shop</span>
-                    </nav>
-                </div>
+           <div className="shop-banner">
+            <div className="overlay1"></div>
+
+            {/* Content */}
+            <div className="banner-content">
+                <h1>Shop</h1>
+                <nav>
+                    <NavLink to="/" className="breadcrumb-link">Home</NavLink>
+                    <span> &gt; </span>
+                    <span className="current-page">Shop</span>
+                </nav>
             </div>
+        </div>
             <section>
                 <div className="filter-bar row">
-                    <div className="filter-options col-lg-auto col-md-12 col-sm">
+                    <div className="filter-options col-lg-auto col-md-12 col-sm-12">
                         <button className="filter-btn">
                             <img src="/img/system-uicons_filtering.png" className="icon" />Filter
                         </button>
@@ -55,8 +57,8 @@ function Shop() {
                     <div className="row product-list">
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
-                                <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                 <Link to="/sofa"><div className="product-image">
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge">
                                         <p>-30%</p>
 
@@ -70,20 +72,21 @@ function Shop() {
                                         </div>
                                     </div>
                                 </div>
+                               
                                 <div className="product-info">
                                     <h3>Sytherine</h3>
                                     <p>Stylish cafe chair</p>
                                     <p className="price">
                                         Rp 2.500.000 <span className="old-price">Rp 3.500.000</span>
                                     </p>
-                                </div>
+                                </div></Link>
 
                             </div>
                         </div>
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
 
 
                                     <div className="overlay">
@@ -107,7 +110,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge"><p>-30%</p></span>
 
 
@@ -132,7 +135,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
 
@@ -158,7 +161,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge">
                                         <p>-30%</p>
 
@@ -185,7 +188,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
 
 
                                     <div className="overlay">
@@ -209,7 +212,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge"><p>-30%</p></span>
 
 
@@ -234,7 +237,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
 
@@ -259,7 +262,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge">
                                         <p>-30%</p>
 
@@ -286,7 +289,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
 
 
                                     <div className="overlay">
@@ -310,7 +313,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge"><p>-30%</p></span>
 
 
@@ -335,7 +338,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
 
@@ -360,7 +363,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge">
                                         <p>-30%</p>
 
@@ -387,7 +390,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
 
 
                                     <div className="overlay">
@@ -411,7 +414,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="discount-badge"><p>-30%</p></span>
 
 
@@ -436,7 +439,7 @@ function Shop() {
                         <div className="prductinfo col-lg-3 col-md-4 col-sm-6 col-12">
                             <div className="product-card">
                                 <div className="product-image">
-                                    <img src="/img/image 1.png" alt="Sytherine" />
+                                    <img src="/img/image 1.png" alt="" />
                                     <span className="new-badge"><p>New</p></span>
 
 
