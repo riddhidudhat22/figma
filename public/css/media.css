@@ -81,7 +81,9 @@
     .products-section {
         padding: 0;
     }
-
+    .feature-item{
+        justify-content: start;
+    }
     .next-page {
         display: block;
     }
@@ -203,6 +205,12 @@
   .cart-table,
   .cart-totals {
     width: 100%;
+  }
+  .contact-container > p {
+        padding: 0 0;
+      }
+  .info-item p{
+    font-size: 14px;
   }
 }
 
@@ -398,6 +406,28 @@
       .cart-totals {
         width: 100%;
       }
+      .contact-content {
+        flex-direction: column;
+      }
+      .info-item{
+        justify-content: center;
+        align-items: center;
+      }
+      .info-item{
+        text-align: center;
+      }
+      .contact-container{
+        padding: 0;
+      }
+      .info-item p {
+      
+        font-size: 18px;
+        
+       
+      }
+      .contact-container > p {
+        padding: 0 0;
+      }
 }
 
 /* sm */
@@ -556,6 +586,22 @@
       .cart-container{
         padding: 20px;
       }
+      .contact-content {
+        flex-direction: column;
+      }
+      .info-item{
+        justify-content: center;
+        align-items: center;
+      }
+      .info-item{
+        text-align: center;
+      }
+      .contact-container{
+        padding: 40px;
+      }
+      .contact-container > p {
+        padding: 0 0;
+      }
 }
 
 
@@ -599,7 +645,9 @@
     .category-image {
         height: 369px;
     }
-
+    .feature-item{
+        justify-content: center;
+    }
     .product-right {
         text-align: center;
 
@@ -686,7 +734,20 @@
     .cart-container {
         flex-direction: column;
       }
-      
+      .contact-content {
+        flex-direction: column;
+      }
+      .info-item{
+        justify-content: center;
+        /* align-items: center; */
+        align-items: flex-start;
+      }
+      .info-item{
+        text-align: center;
+      }
+      .contact-container > p {
+        padding: 0 0;
+      }
    }
 
 
@@ -774,8 +835,25 @@
       .add-to-cart span, .compare span{
         font-size: 14px;
       }
-}
+      .contact-content {
+        flex-direction: row;
+      }
+      .info-item{
+       justify-content: start;
+       align-items: flex-start;
+      }
+      .info-item h4{
+        text-align: start;
+       }
+    .contact-container > p {
 
+        padding: 0 170px;
+
+}
+.dettailinfo{
+    text-align: start;
+}
+}
 
 /* xl*/
 @media screen and (min-width:1200px) {
@@ -809,6 +887,7 @@
     .social-share {
         justify-content: start;
     }
+    
 }
 
 /* xxl */

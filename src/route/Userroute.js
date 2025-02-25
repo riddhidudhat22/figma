@@ -7,6 +7,7 @@ import Shop from "../user/container/Shop/Shop";
 import Sofa from "../user/container/Sofa/Sofa";
 import Comparison from "../user/container/Comparison/Comparison";
 import Cart from "../user/container/Cart/Cart";
+import Contact from "../user/container/Contact/Contact";
 // import Shopbanner from "../user/component/Shopbanner/Shopbanner";
 
 function Userroute() {
@@ -19,6 +20,7 @@ function Userroute() {
                 <Route exact path="/sofa" element={<Sofa />}/>
                 <Route exact path='/comparison' element={<Comparison/>}/>
                 <Route exact path='/cart' element={<Cart/>}/>
+                  <Route exact path='/contact' element={<Contact/>}/>
             </Routes>
             <Footer/>
         </>

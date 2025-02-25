@@ -10,7 +10,7 @@ function Shop() {
            <div className="shop-banner">
             <div className="overlay1"></div>
 
-            {/* Content */}
+            
             <div className="banner-content">
                 <h1>Shop</h1>
                 <nav>

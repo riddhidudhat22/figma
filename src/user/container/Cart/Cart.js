@@ -2,7 +2,8 @@ import React from "react";
 import Shippingdetail from "../../component/Shippingdetail/Shippingdetail";
 
 
-const Cart = () => {
+
+function Cart() {
     return (
         <>
             <section>
